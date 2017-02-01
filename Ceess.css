@@ -8,12 +8,12 @@ html,body{
 }
     .k{
         
- height: 100%;
- width:  100%;
- background-size:       cover;
+ height:  100%;
+ width:   100%;
+ background-size:        cover;
  background-attachment:  fixed;
  padding: 0;
- margin: 0;
+ margin:  0;
  
      
         
@@ -22,16 +22,18 @@ html,body{
     }
 
 #mw:hover{
-    color:white
+    opacity:1;
 }
 #mw{
-    
+    position:absolute;
     cursor: pointer;
-    color:#f7f7f7
+    
     text-align: center;
     width:570px;
     margin-left: 480px;
-    margin-top:100px;
+    top:300px;
+    opacity: 0.5;
+    
     
     
     
@@ -43,7 +45,7 @@ h1{
     color:#ffffff;
     margin: 0;
     font-family: "raleway";
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     line-height: 50px;
     
