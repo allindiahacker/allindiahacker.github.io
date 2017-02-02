@@ -5,8 +5,34 @@
 <script>
 
 $(document).ready(function(){
-    $("#mw").click(function(){
-        $("#mw").fadeOut(300);
+    $("#mw1").click(function(){
+        $("#mw1").fadeOut(300);
+        $("#what").delay(300).fadeIn(300);
+        $("#vid").delay(600).fadeIn(500);
+        $("#prod").delay(600).fadeIn(500);
+        $("#music").delay(1100).fadeIn(500);
+        $("#musictext").delay(1100).fadeIn(500);
+        $("#photo").delay(1600).fadeIn(500);
+        $("#phototext").delay(1600).fadeIn(500);
+        $("#gd").delay(2100).fadeIn(500);
+        $("#gdtext").delay(2100).fadeIn(500);
+        $("#vid").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".b").offset().top
+    }, 500);
+});$("#music").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".c").offset().top
+    }, 700);
+});$("#photo").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".d").offset().top
+    }, 800);
+});$("#gd").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".e").offset().top
+    }, 1000);
+});
     });
 });
 
@@ -19,21 +45,34 @@ $(document).ready(function(){
 <body>
 
 <div  class="k a">
-    <h1 id = "mw">M A U H A L L E W A L E</h1>
+    <h1 class = "mw" id="mw1">M A U H A L L E W A L E</h1>
+    <h1 id = "what">What we are about.</h1>
+    <img id="vid" class="symb" src="Images/Video.png">
+    <img id="music" class="symb" src="Images/music.png">
+    <img id="photo" class="symb" src="Images/photo.png">
+    <img id="gd" class="symb" src="Images/graphicd.png">
+    <h2 class="second" id="prod">Production</h2>
+    <h2 class="second" id="musictext">Music</h2>
+    <h2 class="second" id="phototext">Photography</h2>
+    <h2 class="second" id="gdtext">Graphic Design</h2>
+    </div>
+
+
+<div class="k b" >
+    <h1 class="mw" id="mw2" >P R O D U C T I O N</h1>
+    </div>
+
+    <div class="k c" >
+    <h1 class= "mw" id="mw3">M U S I C</h1>
+    </div>
     
+    <div class="k d" >
+    <h1 class= "mw" id="mw4">P H O T O G R A P H Y</h1>
     </div>
 
-
-<div class="k b">
-    <h1 >P H O T O G R A P H Y</h1>
-    </div>
-
-    <div class="k c">
-    <h1>V I D E O G R A P H Y</h1>
-    </div>
     
-    <div class="k d">
-    <h1>B R A N D I N G</h1>
+    <div class="k e" >
+    <h1 class= "mw" id="mw5">G R A P H I C &nbsp&nbsp  D E S I G N</h1>
     </div>
 
     
