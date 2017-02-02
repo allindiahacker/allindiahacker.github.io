@@ -14,24 +14,82 @@ html,body{
  background-attachment:  fixed;
  padding: 0;
  margin:  0;
- 
-     
-        
-        
-    
-    }
+ }
 
-#mw:hover{
+.second
+{
+font-family: Raleway;
+font-weight: 300;
+color:white;
+position: absolute;    
+top:450px;
+display: none;
+}
+#vid
+{
+  
+  left:200px;
+  
+
+}
+.symb:hover{
+    opacity: 1;
+}
+.symb{width:8%;
+    cursor: pointer;
+    position:absolute;
+    top:350px;
+    display: none;
+    opacity: 0.5;
+}
+#prod{
+    
+  left:200px;
+}
+#music{
+    
+  left:500px;
+}
+
+#musictext{
+    
+  left:527px;
+}
+#phototext{
+    
+  left:795px;
+}
+#gdtext{
+    
+  left:1180px;
+}
+
+#photo{
+   
+  left:800px;
+}
+
+#gd{
+    
+  left:1200px;
+}
+#what{
+    position:absolute;
+    display: none;
+    font-size: 35px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.mw:hover{
     opacity:1;
 }
-#mw{
-    position:absolute;
+.mw{
+    position:relative;
     cursor: pointer;
-    
-    text-align: center;
-    width:570px;
-    margin-left: 480px;
-    top:300px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     opacity: 0.5;
     
     
@@ -40,16 +98,14 @@ html,body{
      
 
 }
+
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color:#ffffff;
     margin: 0;
     font-family: "raleway";
     font-weight: 300;
     text-align: center;
-    line-height: 200px;
-    
-
 }
 #ba{
     padding: 100px;
@@ -70,4 +126,7 @@ h1{
 
 .d{
     background-image: url(Images/4.jpg)
+}
+.e{
+    background-image: url(Images/5.jpg)
 }
