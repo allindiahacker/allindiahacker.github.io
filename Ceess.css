@@ -50,11 +50,13 @@ display: none;
 #music{
     
   left:500px;
+  
 }
 
 #musictext{
     
   left:527px;
+    color:red;
 }
 #phototext{
     
