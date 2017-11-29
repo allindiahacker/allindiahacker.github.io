@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form id="frm1" action=#>
+<form id="frm1" action=# onsubmit="return prints()" method="post">
   Name:    <br><input type="text" name="user" ><br>
   Birthday: <br><input type="text" name="bday" ><br><br>
-
+<input type="Submit">
 </form> 
- <button onclick="prints()">Submit</button>
+
 <p id="n1"></p>
 <p id="d1"></p>
 <script>
@@ -16,6 +16,7 @@
 	var date = "Your Birthday is on " + x.elements[1].value;
 	 document.getElementById("n1").innerHTML = name;
 	 document.getElementById("d1").innerHTML = date;
+	 return false;
 	}
 </script>
 
