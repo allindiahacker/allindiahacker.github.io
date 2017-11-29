@@ -9,7 +9,15 @@
  <button onclick="prints()">Submit</button>
 <p id="n1"></p>
 <p id="d1"></p>
-<script src="https://allindiahacker.github.io/jayess.js"></script>
+<script>
+	function prints() {
+		var x = document.getElementById("frm1");
+	var name = "Hello! " + x.elements[0].value ;
+	var date = "Your Birthday is on " + x.elements[1].value;
+	 document.getElementById("n1").innerHTML = name;
+	 document.getElementById("d1").innerHTML = date;
+	}
+</script>
 
 </body>
 </html>
