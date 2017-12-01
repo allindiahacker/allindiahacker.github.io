@@ -162,13 +162,13 @@ h3{
 .one
 {
   display: inline-block;
-  width: 346px;
-  height: 399px;
+  width: 24%;
+  height: 48%;
   background: black;
   margin: 0;
   color: white;
   position: relative;
-  top:-0px;
+  top:0px;
   left:0px;
   right:0px;
   padding: 0;
@@ -214,8 +214,8 @@ cursor: pointer;
 }
 .two{
        display: inline-block;
-  width: 346px;
-  height: 399px;
+  width: 24%;
+  height: 49%;
   background: black;
   margin: 0;
   color: white;
