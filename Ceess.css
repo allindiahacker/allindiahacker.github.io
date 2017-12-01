@@ -16,7 +16,28 @@ html,body{
  padding: 0;
  margin:  0;
  }
+.vid1
+{
+  display: inline-block;
+  width: 353px;
+  height: 353px;
+  background: red;
+  color: white;
+  position: relative;
+  top:50px;
 
+
+}
+.vid2{
+      position: relative;
+       display: inline-block;
+  width: 353px;
+  height: 353px;
+  background: red;
+  color: white;
+  top:55px;
+
+  }
 .second
 {
 font-family: Raleway;
@@ -26,13 +47,7 @@ position: absolute;
 top:450px;
 display: none;
 }
-#vid
-{
-  
-  left:200px;
-  
 
-}
 .symb:hover{
     opacity: 1;
 }
@@ -42,10 +57,69 @@ display: none;
     top:350px;
     display: none;
     opacity: 0.5;
+
+}
+.one
+{
+  display: inline-block;
+  width: 346px;
+  height: 399px;
+  background: black;
+  margin: 0;
+  color: white;
+  position: relative;
+  top:-0px;
+  left:0px;
+  right:0px;
+  padding: 0;
+  cursor:pointer;
+  display: table-cell;
+  vertical-align: middle;
+  
+ background: rgba(0,0,0,0.7);
+ border: 7px solid white;
+}
+.v1:hover{
+  opacity: 0.8;
+}
+.v1{color: white;
+  font-family: Raleway;
+font-weight: 3000;
+text-align: center;
+opacity: 0.4;
+cursor: pointer;
+
+
+}
+.two{
+       display: inline-block;
+  width: 346px;
+  height: 399px;
+  background: black;
+  margin: 0;
+  color: white;
+  position: relative;
+  top:-4px;
+  left:0px;
+  right:0px;
+  padding: 0;
+  cursor:pointer;
+  line-height: 380px; 
+ background: rgba(0,0,0,0.7);
+ border: 7px solid white;
+
+  }
+#vid
+{
+  
+  left:200px;
+  
+
 }
 #prod{
     
   left:200px;
+
 }
 #music{
     
@@ -60,17 +134,22 @@ display: none;
 }
 #phototext{
     
-  left:895px;
+  left:795px;
 }
 #gdtext{
     
-  left:1180px;
+  left:1080px;
 }
 
 #photo{
    
-  left:900px;
+  left:800px;
 }
+#gd{
+    
+  left:1100px;
+}
+
 .quote1{
     font-family: Raleway;
     font-weight: 300;
@@ -83,10 +162,7 @@ display: none;
     transform: translateX(-50%) translateY(-50%);
     
 }
-#gd{
-    
-  left:1200px;
-}
+
 #what{
     position:absolute;
     display: none;
@@ -135,21 +211,22 @@ h1{
 }
 
 .a{
-    background-image: url(Images/1.jpg)
+    background-image: url(Images/1.jpg);
     
 }
 
 .b{
-    background-image: url(Images/2.jpg)
+    background-image: url(Images/2.jpg);
+    
 }
 
 .c{
-    background-image: url(Images/3.jpg)
+    background-image: url(Images/3.jpg);
 }
 
 .d{
-    background-image: url(Images/4.jpg)
+    background-image: url(Images/4.jpg);
 }
 .e{
-    background-image: url(Images/5.jpg)
+    background-image: url(Images/5.jpg);
 }

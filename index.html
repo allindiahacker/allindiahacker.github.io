@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-<!--comments-->
 $(document).ready(function(){
     $("#mw1").click(function(){
         $("#mw1").fadeOut(300);
@@ -18,37 +17,63 @@ $(document).ready(function(){
         $("#gdtext").delay(2100).fadeIn(500);
         $("#vid").click(function() {
     $('html, body').animate({
-        scrollTop: $(".b").offset().top
+        scrollTop: $("#slide2").offset().top
     }, 500);
 });$("#music").click(function() {
     $('html, body').animate({
-        scrollTop: $(".c").offset().top
+        scrollTop: $("#slide3").offset().top
     }, 700);
 });$("#photo").click(function() {
     $('html, body').animate({
-        scrollTop: $(".d").offset().top
+        scrollTop: $("#slide4").offset().top
     }, 800);
 });$("#gd").click(function() {
     $('html, body').animate({
-        scrollTop: $(".e").offset().top
+        scrollTop: $("#slide5").offset().top
     }, 1000);
 });
     });
+    
+    $("#mw2").click(function(){
+        $("#mw2").fadeOut(300);
+        $("#b1").show().css("display","inline-block");
+        $("#b2").show().css("display","inline-block");
+        $("#b3").show().css("display","inline-block");
+        $("#b4").show().css("display","inline-block");
+        $("#b5").show().css("display","inline-block");
+        $("#b6").show().css("display","inline-block");
+        $("#b7").show().css("display","inline-block");
+        $("#b8").show().css("display","inline-block");
+        $("#b1").delay(500).fadeTo("slow", 1);
+        $("#b2").delay(700).fadeTo("slow", 1);
+        $("#b3").delay(900).fadeTo("slow", 1);
+        $("#b4").delay(300).fadeTo("slow", 1);
+        $("#b5").delay(600).fadeTo("slow", 1);
+        $("#b6").delay(300).fadeTo("slow", 1);
+        $("#b7").delay(800).fadeTo("slow", 1);
+        $("#b8").delay(400).fadeTo("slow", 1);
+
+    });
+    $("#b6").click(function(){
+    	$("#engi").show().fadeIn(300);
+    });
+
+    
 });
 
 </script>
 
     <title>Mauhallewale</title>
-<link rel="stylesheet" href="Ceess.css">
+<link rel="stylesheet" href="css2.css">
 <title>Page Title</title>
 <link rel="icon" href="Images/loga.png">
 </head>
 <body>
 
-<div  class="k a">
-    <h1 class = "mw" id="mw1">M A U H A L L E W A L E</h1>
 
-    <h1 id = "what">What we are about.</h1>
+<div class = "slide" id = "slide1">
+	<h3 class = "mw" id="mw1">M A U H A L L E W A L E</h3>
+	<h3 id = "what">What we are about.</h1>
     <img id="vid" class="symb" src="Images/Video.png">
     <img id="music" class="symb" src="Images/music.png">
     <img id="photo" class="symb" src="Images/photo.png">
@@ -57,28 +82,31 @@ $(document).ready(function(){
     <h2 class="second" id="musictext">Music</h2>
     <h2 class="second" id="phototext">Photography</h2>
     <h2 class="second" id="gdtext">Graphic Design</h2>
-    </div>
-
-
-<div class="k b" >
-    <h1 class="mw" id="mw2" >P R O D U C T I O N</h1>
-    </div>
-
-    <div class="k c" >
-    <h1 class= "mw" id="mw3">M U S I C</h1>
-    </div>
-    
-    <div class="k d" >
-    <h1 class= "mw" id="mw4">P H O T O G R A P H Y</h1>
-    </div>
-
-    
-    <div class="k e" >
-    <h1 class= "mw" id="mw5">G R A P H I C &nbsp&nbsp  D E S I G N</h1>
-    </div>
-
-    
-    
-    
+</div>
+<div class = "slide" id = "slide2">
+	 <iframe id = "engi" width="560" height="315" src="https://www.youtube.com/embed/CIzBQTj1XFc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<h3 class= "mw" id="mw2">P R O D U C T I O N</h3>
+  
+   	
+   	 <div class ="one" id="b1"><h1 class="v1">IIT Kanpur</h1></div><div class ="one" id="b2"><h1 class="v1">IIT Mumbai</h1></div><div class ="one" id= "b3"><h1 class="v1">IIT Delhi</h1></div><div class ="one" id="b4"><h1 class="v1">Mercedes-Benz</h1></div>
+    <div class ="two" id="b5"><h1 class="v1">MYS</h1></div><div class ="two" id="b6"><h1 class="v1">Engifest,DTU</h1></div><div class ="two" id="b7"><h1 class="v1">YLS</h1></div><div class ="two" id="b8"><h1 class="v1">Krafted</h1></div>
+   
+ 
+</div>
+<div class = "slide" id = "slide3">
+    <h3 class= "mw" id="mw3">M U S I C</h3>
+	
+</div>
+<div class = "slide" id = "slide4">
+	    <h3 class= "mw" id="mw4">P H O T O G R A P H Y</h3>
+</div>
+<div class = "slide" id = "slide5">
+	<h3 class= "mw" id="mw5">G R A P H I C &nbsp&nbsp  D E S I G N</h3>
+</div>
+<!--<div id ="two">hey</div>
+<div id ="two">hey</div>
+<div id ="two">hey</div>
+<div id ="two">hey</div>
+-->
 </body>
 </html>
