@@ -1,24 +1,50 @@
+<!--
+document.getElementById("hour").innerHTML = t.getHours();
+		document.getElementById("min").innerHTML = t.getMinutes();
+		document.getElementById("seconds").innerHTML = t.getSeconds();
+		document.getElementById("ms").innerHTML = t.getMilliseconds();
+-->
 <!DOCTYPE html>
 <html>
 <body>
-<form id="frm1" action=# onsubmit="return prints()" method="post">
-  Name:    <br><input type="text" name="user" ><br>
-  Birthday: <br><input type="text" name="bday" ><br><br>
-<input type="Submit">
-</form> 
-
-<p id="n1"></p>
-<p id="d1"></p>
 <script>
-	function prints() {
-		var x = document.getElementById("frm1");
-	var name = "Hello! " + x.elements[0].value ;
-	var date = "Your Birthday is on " + x.elements[1].value;
-	 document.getElementById("n1").innerHTML = name;
-	 document.getElementById("d1").innerHTML = date;
-	 return false;
+	var f = true;
+	var i =0;
+	function rcb()
+	{	if(f==true)
+		{
+			document.getElementById("yes").innerHTML = i++;
+		setTimeout(rcb,0.01);
+		}
 	}
+	function rcb2()
+	{
+		f=false;
+	}
+
+	function rcb3()
+	{
+		f=true;
+rcb();	}
 </script>
+<button onclick="rcb()">START</button>
+<button onclick="rcb2()">PAUSE</button>
+<button onclick="rcb3()">CONTINUE</button>
+
+<!--<p id="day">0</p>
+<br>
+<p id="hour">0</p>
+<br>
+<p id="min">0</p>
+<br>
+<p id="seconds">0</p>
+<br>
+<p id="ms">0</p>
+-->
+<p id="yes">
+	0
+</p>
+
 
 </body>
 </html>
