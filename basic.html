@@ -6,30 +6,47 @@ document.getElementById("hour").innerHTML = t.getHours();
 -->
 <!DOCTYPE html>
 <html>
+<head>
+	<link rel="stylesheet" href="ceess.css">
+</head>
 <body>
 <script>
 	var f = true;
-	var i =0;
+	var i =1;
+	var x = 0;
 	function rcb()
 	{	if(f==true)
-		{
+		{	if(i>=30)
+			{
+					document.getElementById("yes").style.color ='green';
+			}
+
+			
+	
 			document.getElementById("yes").innerHTML = i++;
-		setTimeout(rcb,0.01);
-		}
+		setTimeout(rcb,50);
+		
+	}
 	}
 	function rcb2()
-	{
-		f=false;
+	{	if(x%2==0)
+		{f=false;
+			x++;
+			document.getElementById("pos").innerHTML= "PLAY";
+		}
+		else{
+			f=true;
+			x++;
+			document.getElementById("pos").innerHTML= "PAUSE";
+			rcb();
+		}
 	}
 
-	function rcb3()
-	{
-		f=true;
-rcb();	}
+	
 </script>
 <button onclick="rcb()">START</button>
-<button onclick="rcb2()">PAUSE</button>
-<button onclick="rcb3()">CONTINUE</button>
+<button onclick="rcb2()" id = "pos" >PAUSE</button>
+
 
 <!--<p id="day">0</p>
 <br>
