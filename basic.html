@@ -54,7 +54,11 @@
 	var t_day = Math.floor((timediff/86400000));
 
 		if(f==true)
-		{	
+		{	if(t_sec>=30)
+			{
+					document.getElementById("yes").style.color ='green';
+			}
+
 			document.getElementById("yes").innerHTML =t_day+ " : " + t_hour + " : " + t_min + " : " + t_sec + " : " + t_ms;
 		setTimeout(rcb,0);
 			}
