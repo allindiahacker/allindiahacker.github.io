@@ -4,95 +4,13 @@
 	<link rel="stylesheet" href="css3.css">
 </head>
 <body>
-<script>
-	var started = true;
-	var t_start;
-	var t_pause;
-	var t_play;
-	var p_diff=0;
-	var f=true;//flag to break the timer loop
-	var x=0;//to compare betwen pause and play state
-	var y=0;//to compare between reset and start state
-	var z=0;// to compare wether timer has been started the first time or not
-	function starter(){
-		z++;
-		if(z!=1)
-				y=1;
-		if(started==true)
-		{	started=false;
-			t_start=new Date();
+<script src="jss2.js" >
 
-		timer_calc();
-
-		}
-	}
-	function timer_calc()
-	{
-		if(y==1){			
-			document.getElementById("reset").innerHTML= "START";
-			document.getElementById("yes").innerHTML =0+ " : " + 0 + " : " + 00 + " : " + 00 + " : " + 000;
-			started = true;
-	 	t_start;
-	 	t_pause;
-	 	t_play;
-		p_diff=0;
-	 	f=true;
-	 	x=0;//to compare betwen pause and play state
-	 	y=0;//to compare between reset and start state
-	 	z=0;// to compare wether timer has been started the first time or not
-		}
-			
-			else{
-				document.getElementById("reset").innerHTML= "RESET";
-			var t_end = new Date();
-		var timediff = t_end-t_start;
-		timediff = timediff - p_diff;
-	var t_ms = timediff%1000;
-	var t_sec = Math.floor((timediff/1000)%60);
-	var t_min = Math.floor(((timediff/60000)%60));
-	var t_hour = Math.floor((timediff/3600000)%24);
-	var t_day = Math.floor((timediff/86400000));
-
-		if(f==true)
-		{	if(t_sec>=30)
-			{
-					document.getElementById("yes").style.color ='green';
-			}
-
-			document.getElementById("yes").innerHTML =t_day+ " : " + t_hour + " : " + t_min + " : " + t_sec + " : " + t_ms;
-		setTimeout(timer_calc,0);
-			}
-		
-	}
-		
-		
-	}
-	function paused()
-	{	if(x%2==0)
-		{f=false;
-			x++;
-			document.getElementById("pos").innerHTML= "PLAY";
-			t_pause = new Date();
-		}
-		else{
-			f=true;
-			x++;
-			t_play = new Date();
-			p_diff += (t_play-t_pause);
-			document.getElementById("pos").innerHTML= "PAUSE";
-			timer_calc();
-		}
-	}
-
-	
-</script>
-<button onclick="starter()"" id ="reset">START</button>
-<button onclick="paused()" id = "pos" >PAUSE</button>
-
-<p id="yes">
+</script>   
+ <button onclick="timer_initializer()" id = "button1">START</button>
+ <button onclick="timer_pauser()" id = "button2">PAUSE</button>
+<p id="timer">
 	0
 </p>
-
-
 </body>
 </html>
