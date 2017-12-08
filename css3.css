@@ -1,76 +1,81 @@
-var elem_opacity = 0;
-var count =-1;
-var setInterval_id = setInterval(function(){ fade_in("game") },30);
-setTimeout(page_explain,660);
-setTimeout(button_appear,1200);
-window.onclick = counter;
-function counter()
-{count++
-    if(count>0)
-        {
-           document.getElementById("front_bar").style.width = (count/10) + '%'; 
-           document.getElementById("count").innerHTML = count; 
-        }
-}
-function fade_in(elem)
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Signika');
+#game
 {
-    if(elem_opacity<=1)
-    {
-        var object = document.getElementById(elem);
-        object.style.opacity=elem_opacity;
-        elem_opacity+=0.05;
-    }
-    else
-    {
-        clearInterval(setInterval_id);  
-        
-    }
-      
+    text-align: center;
+    font-family:raleway;
+    font-weight: 100;
+    font-size: 40px;
+    opacity: 0;
+    color: gray;
+    padding: 30px;
+    
+}
+#count
+{   opacity: 0;
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+}
+#back_bar
+{
+    width:60%;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    opacity: 0;
+}
+#front_bar
+{
+    width:1%;
+    height:30px;
+    background-color: lightcoral;
+}
+#explain
+{
+    text-align: center;
+    font-family:raleway;
+    font-weight: 100;
+    font-size: 25px;
+    opacity: 0;
+    color: gray;
+    padding-top: 10px;
+    margin: auto;
+    width:680px;
+    
+}
+#start
+{
+display: block;
+border: 1px;
+background-color: white;
+box-shadow:none;
+border-radius: 0px;
+padding: 15px;
+margin-top: 50px;
+border-color: coral;
+font-family: raleway;
+font-weight: 400;
+margin-left: auto;
+margin-right: auto;
+opacity: 0;
+border-style: solid;
+border-color: lightcoral;
+    outline: none;
+ 
 }
 
-function page_explain()
-{   
-    elem_opacity = 0;
-    setInterval_id = setInterval(function(){ fade_in("explain") },25);
-}
-
-function button_appear()
-{   
-    elem_opacity = 0;
-    setInterval_id = setInterval(function(){ fade_in("start") },25);
-}
-function fade_out_toggle()
-{
-    elem_opacity = 1;
-    setInterval_id = setInterval(function(){ fade_out() },25);
-    setTimeout(hide_all,520);
-}
-function fade_out()
-{
-    if(elem_opacity>-0.05)
-    {
-        var object = document.getElementById("all");
-        object.style.opacity=elem_opacity;
-        elem_opacity-=0.05;
-    }
-    else{
-        clearInterval(setInterval_id);
-    }
-}
-function hide_all()
-{
-    var object = document.getElementById("all");
-    object.style.display = "none";
-    elem_opacity = 0;
-    bar_display();
-}
-function bar_display()
-{
-    if(elem_opacity<=1.05)
-    {
-        document.getElementById("back_bar").style.opacity=elem_opacity;
-        document.getElementById("count").style.opacity=elem_opacity;
-        elem_opacity+=0.05;
-        setTimeout(bar_display,25);
-    }
+#start:hover{
+    background-color: darkgray;
+    cursor: pointer;
+    background-color: lightcoral;
+    color:white;
 }
