@@ -11,7 +11,109 @@
     padding: 30px;
     
 }
+
 #count
+{   opacity: 0;
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#count2
+{   opacity: 0;
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#count3
+{   display: none;
+    opacity: 0;
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#timer_image
+{   display: none;
+    opacity: 0;
+    margin: auto;
+    background-color: grey;
+    height: 420px; 
+    width: 420px;
+}
+#timer_image2
+{
+    height: 420px; 
+    width: 420px;
+    background-color: lightcoral;
+}
+#timer_image3
+{
+    height: 420px; 
+    width: 420px;
+    background-image: url(Untitled-3.png);
+    background-size: 100%;
+}
+.check
+{   display: inline-block;
+    position: absolute; 
+    font-family:raleway;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+#checkpoint1
+{
+    left: 27.2%;
+    top: 33.5%;
+}
+
+#checkpoint2
+{
+    left: 34.4%;
+    top: 42.5%;
+}
+
+#checkpoint3
+{   
+    left: 77%;
+    top:33.5%;
+}
+
+#checkpoint4
+{
+    left: 12%;
+    top: 33.5%;
+}
+#count2
 {   opacity: 0;
     text-align: center;
     color: gray;
