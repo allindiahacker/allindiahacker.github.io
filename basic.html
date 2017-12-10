@@ -5,7 +5,7 @@
 </head>
 <body>
 <script src="jss2.js" ></script>  
-<div id="all">
+<div id="all_page1">
     <h1 id="game">Let's play a game.</h1>
     <div id="explain">
         <p>
@@ -19,21 +19,24 @@
     </div>
     <button  id="start" onclick="fade_out_toggle()">S T A R T</button>
 </div>
-<div id="count">
-    <h1 id = "count2" unselectable="on">0</h1>
-    <h2 class = "check" id = "checkpoint1">JEDI</h2>
-    <h2 class = "check" id = "checkpoint2">DARTH VADER</h2>
-    <h2 class = "check" id = "checkpoint3">BATMAN</h2>
-    <h2 class = "check" id = "checkpoint4">STORMTROOPER</h2>
+<div id = "timer_page">
+    <div id="count">
+        <h1 id = "count2" unselectable="on">0</h1>
+        <h2 class = "check" id = "checkpoint1">JEDI</h2>
+        <h2 class = "check" id = "checkpoint2">DARTH VADER</h2>
+        <h2 class = "check" id = "checkpoint3">BATMAN</h2>
+        <h2 class = "check" id = "checkpoint4">STORMTROOPER</h2>
+    </div>
+        
+    <div id="back_bar">
+        <div id="front_bar"></div>
+    </div>
+    <div id = "timer_image">
+        <div id="timer_image2">
+            <div id="timer_image3"></div>
+        </div>    
+    </div>
 </div>
     <h1 id = "count3" unselectable="on">0</h1>
-<div id="back_bar">
-    <div id="front_bar"></div>
-</div>
-<div id = "timer_image">
-    <div id="timer_image2">
-        <div id="timer_image3"></div>
-    </div>    
-</div>
 </body>    
 </html>
