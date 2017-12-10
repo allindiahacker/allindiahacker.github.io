@@ -85,7 +85,7 @@
 }
 .check
 {   display: inline-block;
-    position: absolute; 
+    position: relative;
     font-family:raleway;
     font-weight: 600;
     font-size: 20px;
@@ -96,29 +96,28 @@
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+    padding: none;
+    border: none;
+    margin: none;
+    
 }
 #checkpoint1
 {
-    left: 27.2%;
-    top: 33.5%;
+   right:24%;
 }
 
 #checkpoint2
-{
-    left: 34.4%;
-    top: 42.5%;
+{left:33.5%;
 }
 
 #checkpoint3
 {   
-    left: 77%;
-    top:33.5%;
+   left:21%;
 }
 
 #checkpoint4
 {
-    left: 12%;
-    top: 33.5%;
+  right:27%;
 }
 #back_bar
 {
@@ -126,7 +125,6 @@
     background-color: lightgrey;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     
 }
 #front_bar
