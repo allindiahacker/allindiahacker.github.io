@@ -1,72 +1,13 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#mw1").click(function(){
-        $("#mw1").fadeOut(300);
-        $("#what").delay(300).fadeIn(300);
-        $("#vid").delay(600).fadeIn(500);
-        $("#prod").delay(600).fadeIn(500);
-        $("#music").delay(1100).fadeIn(500);
-        $("#musictext").delay(1100).fadeIn(500);
-        $("#photo").delay(1600).fadeIn(500);
-        $("#phototext").delay(1600).fadeIn(500);
-        $("#gd").delay(2100).fadeIn(500);
-        $("#gdtext").delay(2100).fadeIn(500);
-        $("#vid").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slide2").offset().top
-    }, 500);
-});$("#music").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slide3").offset().top
-    }, 700);
-});$("#photo").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slide4").offset().top
-    }, 800);
-});$("#gd").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slide5").offset().top
-    }, 1000);
-});
-    });
-    
-    $("#mw2").click(function(){
-        $("#mw2").fadeOut(300);
-        $("#b1").show().css("display","inline-block");
-        $("#b2").show().css("display","inline-block");
-        $("#b3").show().css("display","inline-block");
-        $("#b4").show().css("display","inline-block");
-        $("#b5").show().css("display","inline-block");
-        $("#b6").show().css("display","inline-block");
-        $("#b7").show().css("display","inline-block");
-        $("#b8").show().css("display","inline-block");
-        $("#b1").delay(500).fadeTo("slow", 1);
-        $("#b2").delay(700).fadeTo("slow", 1);
-        $("#b3").delay(900).fadeTo("slow", 1);
-        $("#b4").delay(300).fadeTo("slow", 1);
-        $("#b5").delay(600).fadeTo("slow", 1);
-        $("#b6").delay(300).fadeTo("slow", 1);
-        $("#b7").delay(800).fadeTo("slow", 1);
-        $("#b8").delay(400).fadeTo("slow", 1);
-
-    });
-    $("#b6").click(function(){
-    	$("#engi").show().fadeIn(300);
-    });
-
-    
-});
-
-</script>
-
+    <script src = "jq.js"></script>
     <title>Mauhallewale</title>
-<link rel="stylesheet" href="css2.css">
-<title>Page Title</title>
-<link rel="icon" href="Images/loga.png">
+    <link rel="stylesheet" href="css2.css">
+    <title>Page Title</title>
+    <link rel="icon" href="Images/loga.png">
 </head>
 <body>
 
@@ -84,21 +25,41 @@ $(document).ready(function(){
     <h2 class="second" id="gdtext">Graphic Design</h2>
 </div>
 <div class = "slide" id = "slide2">
-	 <iframe id = "engi" width="560" height="315" src="https://www.youtube.com/embed/CIzBQTj1XFc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	 <iframe class = "player" id="engi" width="840" height="472.5" src="https://www.youtube.com/embed/7u8DsFkUsnE?&rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="mys" width="840" height="472.5" src="https://www.youtube.com/embed/4kjkEsAsrwg?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="iitk" width="840" height="472.5" src="https://www.youtube.com/embed/6kevqZ2abrU?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="poke" width="840" height="472.5" src="https://www.youtube.com/embed/DI-hNBWp8gw?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="merc" width="840" height="472.5" src="https://www.youtube.com/embed/aWmtlxgCxoI?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="yls" width="840" height="472.5" src="https://www.youtube.com/embed/CIzBQTj1XFc?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="iitd" width="840" height="472.5" src="https://www.youtube.com/embed/CIzBQTj1XFc?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
+    <iframe class = "player" id="greece" width="840" height="472.5" src="https://www.youtube.com/embed/CIzBQTj1XFc?rel=0&amp;showinfo=0" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    
 <h3 class= "mw" id="mw2">P R O D U C T I O N</h3>
-  
-   	
-   	 <div class ="one" id="b1"><h1 class="v1">IIT Kanpur</h1></div><div class ="one" id="b2"><h1 class="v1">IIT Mumbai</h1></div><div class ="one" id= "b3"><h1 class="v1">IIT Delhi</h1></div><div class ="one" id="b4"><h1 class="v1">Mercedes-Benz</h1></div>
-    <div class ="two" id="b5"><h1 class="v1">MYS</h1></div><div class ="two" id="b6"><h1 class="v1">Engifest,DTU</h1></div><div class ="two" id="b7"><h1 class="v1">YLS</h1></div><div class ="two" id="b8"><h1 class="v1">Krafted</h1></div>
-   
- 
+<div id="page2_boxes">
+    <div id="theatre_mode"></div>
+    <div class = "boxes" id ="b1"><h3 class = "box_names">Meet Your Self</h3></div>
+    <div class = "boxes" id ="b2"><h3 class = "box_names">Antaragni,IIT Kanpur</h3></div>
+    <div class = "boxes" id ="b3"><h3 class = "box_names">Rendevouz,IIT Delhi</h3></div>
+    <div class = "boxes" id ="b4"><h3 class = "box_names">Youth Leadership Summit</h3></div>
+    <div class = "boxes" id ="b5"><h3 class = "box_names">Mercedes-Benz</h3></div>
+    <div class = "boxes" id ="b6"><h3 class = "box_names">Engifest,DTU</h3></div>
+    <div class = "boxes" id ="b7"><h3 class = "box_names">Greece</h3></div>
+    <div class = "boxes" id ="b8"><h3 class = "box_names">Pokewalk</h3></div>
+</div>
 </div>
 <div class = "slide" id = "slide3">
-    <h3 class= "mw" id="mw3">M U S I C</h3>
+    <h3 class= "mw" id="mw3"><a id = "musiclink" href="https://www.youtube.com/channel/UC9jReXgNfr41O79DEo1Io9Q" target="_blank">M U S I C</a></h3>
 	
 </div>
 <div class = "slide" id = "slide4">
-	    <h3 class= "mw" id="mw4">P H O T O G R A P H Y</h3>
+	    <h3 class= "mw" id="mw4"><a id = "photolink" href="https://www.instagram.com/mauhallewale/" target="_blank">P H O T O G R A P H Y</a></h3>
 </div>
 <div class = "slide" id = "slide5">
 	<h3 class= "mw" id="mw5">G R A P H I C &nbsp&nbsp  D E S I G N</h3>
