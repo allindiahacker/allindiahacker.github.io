@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="rps/css4.css">
+	<title>
+		R P S L \\ //
+	</title>
+</head>
+<body>
+	<script src="rps/jss3.js" ></script>  
+	<div id="story_div">
+		Galactus the mighty cosmic entity, consumes planets to sustain his life force. He has come to earth to devour it and contibue along the way. You are Earth's last hope as the avengers are busy preparing for Thanos. Beat Galactus in a game of Rock-Paper-Scissors-Lizard-Spock and save planet Earth.
+		<button id="start_game" onclick="begin()">I AM THE HERO</button>
+	</div>
+	
+	<div id="choices">
+		<img class = "choice" id="rock" onclick="chose_rock()" src="rps/1.png">
+		<img class = "choice" id="paper" onclick="chose_paper()" src="rps/2.png">
+		<img class = "choice" id="sci" onclick="chose_sci()" src="rps/3.png">
+		<img class = "choice" id="liz" onclick="chose_liz()" src="rps/4.png">
+		<img class = "choice" id="spock" onclick="chose_spock()" src="rps/5.png">
+	</div>
+	<div id="game">
+		<div id = "show_my_choice">
+		<h2 class="choice1" id="user">You</h2>
+		<img class = "choice1" id="rock1"  src="rps/1.png">
+		<img class = "choice1" id="paper1" src="rps/2.png">
+		<img class = "choice1" id="sci1"  src="rps/3.png">
+		<img class = "choice1" id="liz1"  src="rps/4.png">
+		<img class = "choice1" id="spock1" src="rps/5.png">
+		<h2 class="choice2" id="vs">VS</h2>
+		<h2 class="choice2" id="galactus">GALACTUS</h2>
+		<img class = "choice2" id="rock2"  src="rps/1.png">
+		<img class = "choice2" id="paper2" src="rps/2.png">
+		<img class = "choice2" id="sci2"  src="rps/3.png">
+		<img class = "choice2" id="liz2"  src="rps/4.png">
+		<img class = "choice2" id="spock2" src="rps/5.png">
+	</div>
+	<div id="end">
+		<h1 id="end0">a</h1>
+		<h1 id="end1">You 0</h1>
+		<h1 id="end2">Galactus 0</h1>
+		<button id="play_again" onclick="restart()">P L A Y &nbsp A G A I N</button>
+	</div>
+	</div>
+	
+
+</body>
+</html>
