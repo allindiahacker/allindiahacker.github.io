@@ -68,6 +68,7 @@ function fade_out_toggle()
     setInterval_id = setInterval(function(){ fade_out("opening_page") },25);
     var form = document.getElementById("frm1");
     word = form.elements[0].value;
+    word = word.toLowerCase();
     if(word=="me")
         document.getElementById("hint").innerHTML = "L O L :D"
     len = word.length;
