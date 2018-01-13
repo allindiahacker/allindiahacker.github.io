@@ -50,6 +50,6 @@ function add()
 	temp_task.innerHTML = task;
 	temp_task.className = "tasks";
 	localStorage.setItem( 'task' + Number(localStorage.num), JSON.stringify(task));
-	return false;
+	 
 }
 
