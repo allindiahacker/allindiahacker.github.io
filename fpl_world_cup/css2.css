@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Signika');
+#title1
+{
+    text-align: center;
+    font-family:raleway;
+    font-weight: 100;
+    font-size: 40px;
+    opacity: 0;
+    color: gray;
+    padding: 20px;
+    
+}
+#title_list_of_teams
+{
+    text-align: center;
+    font-family:raleway;
+    font-weight: 100;
+    font-size: 35px;
+    color: coral;
+    padding: 20px;
+    
+}
+
+#count
+{   
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#count2
+{   
+    
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#count3
+{   display: none;
+    opacity: 0;
+    text-align: center;
+    color: gray;
+    font-family: 'Josefin Slab', serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    font-size: 100px;
+    margin-top: 100px;
+}
+#team_list_page
+{
+    opacity: 0;
+}
+#timer_image
+{   display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: grey;
+    height: 300px; 
+    width: 420px;
+}
+#timer_image2
+{
+    height: 300px; 
+    width: 420px;
+    background-color: lightcoral;
+}
+#timer_image3
+{
+    height: 300px; 
+    width: 420px;
+    background-image: url(Untitled-3.png);
+    background-size: 100%;
+    background-position: center;
+}
+.check
+{   display: inline-block;
+    position: relative;
+    font-family:raleway;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    padding: none;
+    border: none;
+    margin: none;
+    
+}
+#checkpoint1
+{
+   right:24%;
+}
+
+#checkpoint2
+{left:33.5%;
+}
+
+#checkpoint3
+{   
+   left:21%;
+}
+
+#checkpoint4
+{
+  right:27%;
+}
+#back_bar
+{
+    width:60%;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#front_bar
+{
+    width:0%;
+    height:30px;
+    background-color: lightcoral;
+}
+#explain
+{
+    text-align: center;
+    font-family:raleway;
+    font-weight: 100;
+    font-size: 25px;
+    color: gray;
+    padding-top: 10px;
+    margin: auto;
+    width:680px;
+    
+}
+
+#explain1
+{
+    opacity: 0;
+}
+
+#explain2
+{
+    opacity: 0;
+}
+
+#explain3
+{
+    opacity: 0;
+}
+
+#explain4
+{
+    opacity: 0;
+}
+
+#show_list_button
+{
+display: block;
+border: 1px;
+background-color: white;
+box-shadow:none;
+border-radius: 0px;
+padding: 15px;
+margin-top: 50px;
+border-color: coral;
+font-family: raleway;
+font-weight: 400;
+margin-left: auto;
+margin-right: auto;
+opacity: 0;
+border-style: solid;
+border-color: lightcoral;
+    outline: none;
+ 
+}
+
+#show_list_button:hover{
+    background-color: darkgray;
+    cursor: pointer;
+    background-color: lightcoral;
+    color:white;
+}
